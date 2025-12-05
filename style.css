@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background: #d7d7d7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.main-heading {
+    margin-bottom: 20px;
+    font-size: 29px;
+    color: #111;
+    font-weight: bold;
+}
+
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+
+.container h3 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+
+.qr-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0px 0px 30px 0px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+.tooltip {
+    position: absolute;
+    bottom: 100px;
+    background: #000;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 12px;
+}
+
+img:hover + .tooltip {
+    display: block;
+}
+
+
+.buttons-box {
+    margin-top: 18px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: rgb(190, 190, 190);
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+}
